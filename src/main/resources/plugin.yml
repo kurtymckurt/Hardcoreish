@@ -1,0 +1,13 @@
+name: hardcoreish
+main: com.kurtymckurt.Hardcoreish
+version: 1.0.0
+api-version: "1.16"
+softdepend:
+  - [BanManager]
+commands:
+  hardcoreish:
+    description: Adds player to a list to ban when dead
+    usage: /hardcoreish add <player>
+  hard-list:
+    description: Lists the managed players
+    usage: /hard-list
