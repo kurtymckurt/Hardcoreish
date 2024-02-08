@@ -26,7 +26,7 @@ public class AddCommand implements CommandExecutor {
             return false;
         }
 
-        if(!addOrRemove.equals("add") && !addOrRemove.equals("remove")) {
+        if(!"add".equals(addOrRemove) && !"remove".equals(addOrRemove)) {
             return false;
         }
 
@@ -40,7 +40,7 @@ public class AddCommand implements CommandExecutor {
             if(player == null) {
                 Bukkit.getOfflinePlayer(args[i]);
             }
-            if(addOrRemove.equals("add")) {
+            if("add".equals(addOrRemove)) {
                 //addPlayer();
                 if (player != null) {
                     Bukkit.dispatchCommand(consoleSender, "whitelist add " + player.getName());
